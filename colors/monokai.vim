@@ -1,5 +1,6 @@
 " Vim color file
 " Converted from Textmate theme Monokai using Coloration v0.3.2 (http://github.com/sickill/coloration)
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 
 set background=dark
 highlight clear
@@ -11,6 +12,7 @@ endif
 set t_Co=256
 let g:colors_name = "monokai"
 
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#272822 gui=NONE
 hi Cursor ctermfg=235 ctermbg=231 cterm=NONE guifg=#272822 guibg=#f8f8f0 gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
@@ -22,27 +24,39 @@ hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#64645e guibg=#64645e gui=
 hi MatchParen ctermfg=197 ctermbg=NONE cterm=underline guifg=#f92672 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
-hi Pmenu ctermfg=81 ctermbg=281 cterm=NONE guifg=#66d9ef guibg=#f8f8f2 gui=NONE
+
+hi Pmenu ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
 hi PmenuSel ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
-" hi IncSearch ctermfg=235 ctermbg=186 cterm=NONE guifg=#272822 guibg=#e6db74 gui=NONE
-" hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
-hi Search ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
-hi IncSearch ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
+hi PmenuSbar ctermfg=81 ctermbg=241 cterm=NONE guifg=#66d9ef guibg=#64645e gui=NONE
+hi PmenuThumb ctermfg=241 ctermbg=81 cterm=NONE guifg=#64645e guibg=#66d9ef gui=NONE
+
+hi IncSearch ctermfg=235 ctermbg=186 cterm=NONE guifg=#272822 guibg=#e6db74 gui=NONE
+hi Search ctermfg=186 ctermbg=NONE cterm=underline guifg=#e6db74 guibg=NONE gui=underline
 hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Folded ctermfg=242 ctermbg=235 cterm=NONE guifg=#75715e guibg=#272822 gui=NONE
 hi SignColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
-hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#272822 gui=NONE
 hi Boolean ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Character ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#75715e guibg=NONE gui=NONE
 hi Conditional ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-" hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Constant ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Define ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f8f8f2 guibg=#46830c gui=bold
-hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b0807 guibg=NONE gui=NONE
-hi DiffChange ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=#243955 gui=NONE
-hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f8f8f2 guibg=#204a87 gui=bold
+
+hi DiffAdd ctermfg=148 ctermbg=64 cterm=bold guifg=#a6e22e guibg=NONE gui=bold
+hi DiffDelete ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi DiffChange ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi DiffText ctermfg=208 ctermbg=NONE cterm=bold guifg=#fd971f guibg=NONE gui=bold
+hi SignifyLineAdd ctermfg=148 ctermbg=237 cterm=NONE guifg=#a6e22e guibg=#3c3d37 gui=NONE
+hi SignifyLineDelete ctermfg=197 ctermbg=237 cterm=NONE guifg=#f92672 guibg=#3c3d37 gui=NONE
+hi SignifyLineDeleteFirstLine ctermfg=197 ctermbg=237 cterm=NONE guifg=#f92672 guibg=#3c3d37 gui=NONE
+hi SignifyLineChange ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
+hi SignifyLineChangeDelete ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
+hi SignifySignAdd ctermfg=148 ctermbg=237 cterm=NONE guifg=#a6e22e guibg=#3c3d37 gui=NONE
+hi SignifySignDelete ctermfg=197 ctermbg=237 cterm=NONE guifg=#f92672 guibg=#3c3d37 gui=NONE
+hi SignifySignDeleteFirstLine ctermfg=197 ctermbg=237 cterm=NONE guifg=#f92672 guibg=#3c3d37 gui=NONE
+hi SignifySignChange ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
+hi SignifySignChangeDelete ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
+
 hi ErrorMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi WarningMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi Float ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
@@ -50,7 +64,7 @@ hi Function ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NON
 hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
 hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Label ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
-hi NonText ctermfg=59 ctermbg=236 cterm=NONE guifg=#49483e guibg=#31322c gui=NONE
+hi NonText ctermfg=235 ctermbg=235 cterm=NONE guifg=#262626 guibg=#262626 gui=NONE
 hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Operator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
@@ -62,7 +76,6 @@ hi String ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
 hi Tag ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=NONE gui=bold
 hi Todo ctermfg=95 ctermbg=NONE cterm=inverse,bold guifg=#75715e guibg=NONE gui=inverse,bold
-" hi Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Type ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi rubyClass ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
@@ -113,5 +126,6 @@ hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi lessVariable ctermfg=208 ctermbg=NONE cterm=NONE guifg=#fd971f guibg=NONE gui=NONE
 hi lessOperator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+
 hi IndentGuidesOdd ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
 hi IndentGuidesEven ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
