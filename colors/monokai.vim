@@ -25,6 +25,10 @@ hi MatchParen ctermfg=197 ctermbg=NONE cterm=underline guifg=#f92672 guibg=NONE 
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
 
+hi TabLine ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
+hi TabLineSel ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
+hi TabLineFill ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
+
 hi Pmenu ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
 hi PmenuSel ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
 hi PmenuSbar ctermfg=81 ctermbg=241 cterm=NONE guifg=#66d9ef guibg=#64645e gui=NONE
