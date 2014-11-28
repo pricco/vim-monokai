@@ -31,7 +31,7 @@ hi TabLineFill ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui
 
 hi Pmenu ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
 hi PmenuSel ctermfg=231 ctermbg=81 cterm=NONE guifg=#f8f8f2 guibg=#66d9ef gui=NONE
-hi PmenuSbar ctermfg=81 ctermbg=241 cterm=NONE guifg=#66d9ef guibg=#64645e gui=NONE
+hi PmenuSbar ctermfg=81 ctermbg=237 cterm=NONE guifg=#66d9ef guibg=#3c3d37 gui=NONE
 hi PmenuThumb ctermfg=241 ctermbg=81 cterm=NONE guifg=#64645e guibg=#66d9ef gui=NONE
 
 hi IncSearch ctermfg=235 ctermbg=186 cterm=NONE guifg=#272822 guibg=#e6db74 gui=NONE
